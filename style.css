@@ -8,7 +8,7 @@ body{
     background-color: rgb(2, 8, 36);
 }
 .header img{
-    width: 90px;
+    width: 120px;
     height: 70px;
     margin: 5px 0px;
     border-radius: 20px;
@@ -32,5 +32,8 @@ body{
     color: white;
 }
 .nav ul li a:hover{
-    background-color: rgba(4, 36, 29, 0.473);
+    background-color: rgba(11, 23, 133, 0.637);
+    border-radius: 10px;
+    transition-duration: .43;
+    font-size: 2rem;
 }
