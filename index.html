@@ -5,8 +5,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>SMA Games-home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="JqueryUI/jquery-ui.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+
 </head>
 <body>
     <div class="container">
@@ -25,172 +26,183 @@
                 </nav> 
             
         </header> 
-        
+
+        <div class="div1">
+        <a class="tog"><img src="images/day-and-night.png" width="40px" height="40px"></a>
+        <a class="cart"><img src="images/cart.png"></a>
+         </div>
+         
+         <div id="modal">
+           <img src="images/check.png" class="check">
+           <p>Succesfully ordered</p>
+           <a onclick="hidemodal()" class="close">Close</a>
+         </div>
         <div id="intro">
           <!--used css animations to make the text appear one after the other-->
           <p>WELCOME TO SCI GAMES</p>
         </div>
+
           <!--used css animations to make the images change after certain time-->
         <p class="lr">Latest Release</p>
         <div id="latest-games"> 
         </div>
 
 <!--This part contains the available stocks/games-->
-        <div id="category">
+        <div id="category" class="items">
           <ul>
 
             <p id="ac">Category:Action</p>
 
               <li><img src="images/tlou.jpeg">
                 <span>THE LAST AMONG US</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/tr.jpeg">
+              <li><img src="images/tr.jpeg" >
                 <span>TOMB RAIDER</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/watchdogs.jpeg">
+              <li><img src="images/watchdogs.jpeg" >
                 <span>WATCHDOGS</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/rec.jpeg">
+              <li><img src="images/rec.jpeg" >
                 <span>RECKONING</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/sd.jpeg">
+              <li><img src="images/sd.jpeg" >
                 <span>SILENT HILL</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/dd.jpeg">
+              <li><img src="images/dd.jpeg" >
                 <span>DRAGONS DOGMA</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/lostp.jpeg">
+              <li><img src="images/lostp.jpeg" >
                 <span>LOST PLANET</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/asr.jpeg">
+              <li><img src="images/asr.jpeg" >
                 <span>ASSASIN'S CREED :ROGUE</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/ms.jpeg">
+              <li><img src="images/ms.jpeg" >
                 <span>TIME SHIFT</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/infamous.jpeg">
                 <span>INFAMOUS 2</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/avatar.jpeg">
                 <span>AVATAR</span>
                 <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/ss.jpeg">
                 <span>SHADOWS OF MORDOR</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
           </ul>  
         </div>
 
-        <div id="category">
+        <div id="category" class="items">
           <ul>
 
             <p id="ac">Category:SPORTS</p>
 
               <li><img src="images/pes2.jpeg">
                 <span>PES 2020</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/grid.jpeg">
                 <span>GRID 2</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/tennis.jpeg">
                 <span>GRAND SLAM TENNIS 2</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/rugby.jpeg">
                 <span>NFL TOUR</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
-              <li><img src="images/fifa.jpeg" height="">
+              <li><img src="images/fifa.jpeg" >
                 <span>FIFA 19</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/ufc.jpeg">
                 <span>UFC UNDISPUTED</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/skate.jpeg">
                 <span>SKATES</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/Sport.jpeg">
                 <span>SPORTS CHAMPIONS</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/pes1.jpeg">
                 <span>PES 2020</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/pp.jpeg">
                 <span>PRINCE OF PERSIA: THE FORGOTTEN SAND</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/mk.jpeg">
                 <span>MORTAL KOMBAT</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
               <li><img src="images/ss.jpeg">
                 <span>SHADOWS OF MORDOR</span>
-                <a id="Buy">ORDER NOW</a>
-                <button  id="addtocart">ADD  TO CART</button>
+                <a id="Buy" onclick="showmodal()">ORDER NOW</a>
+                <button  id="addtocart" class="addtocart">ADD TO CART</button>
               </li>
 
           </ul> 
@@ -223,6 +235,17 @@
 
    </div>
    <script src='jquery.js'></script>
-  <script src='menu.js'></script>
+   <script src="JqueryUI/jquery-ui.js"></script>
+   <script src="Fly-To-Cart-Effect-jQuery-Flyto/assets/js/flyto.js"></script>
+  <script src='Scigames.js'></script>
+  <script type="text/javascript">
+    function showmodal(){
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function hidemodal(){
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
