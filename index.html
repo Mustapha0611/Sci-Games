@@ -10,26 +10,32 @@
 </head>
 <body>
     <div class="container">
+    <!--The header contains the logo and navigation bar-->
         <header id="header">
 
                 <img src="images/scigames.png">
+                <a class="burger-nav"></a>
                 <nav id="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#category">Categories</a></li>
                         <li><a href="#About">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav> 
             
         </header> 
+        
         <div id="intro">
+          <!--used css animations to make the text appear one after the other-->
           <p>WELCOME TO SCI GAMES</p>
         </div>
+          <!--used css animations to make the images change after certain time-->
         <p class="lr">Latest Release</p>
         <div id="latest-games"> 
         </div>
 
+<!--This part contains the available stocks/games-->
         <div id="category">
           <ul>
 
@@ -188,24 +194,35 @@
               </li>
 
           </ul> 
-          <!--<footer>hello</footer> -->   
+             
                </div>
-
+<!--Little info about the site ,it purpose and owner-->
         <div id="About"> 
             <h2>ABOUT US</h2>
 
             <p>SCI Games is design to serve as <b>Online Store</b> where users can purchase games instantly and get it downloaded on there console
-               or <b>Add To Cart </b>so that it could be accessed easily for future purchase. <br><br>Designed by <b><i>MUSTEEY </i></b> -Computer Science undergrad
+               or <b>Add To Cart </b>so that it could be accessed easily for future purchase. <br><br>
+               <img src="images/musteey.JPG">Designed by <b><i>MUSTEEY </i></b> -Computer Science undergrad
                (3<sup>rd</sup> Year Student), A Gamer and also a FrontEnd developer    
             </p>
         </div>
-
+<!--How to reach the owner-->
         <div id="contact"> 
-          <p>Contact US</p>
-            <img src="images/musteey.JPG">
+          <p class="contact">Contact US</p><br>
+          
+          <p id="contactp">For more enquiries or complains feel free to reach us on our social media platforms
+            also don't forget to follow us
+          </p>
+            <ul>
+              <li><a href="#"><img src="images/fb.png"></a></li>
+              <li><a href='mailto:mustaphasunusi5@gmail.com'><img src="images/email.png"></a></li>
+              <li><a href="#"><img src="images/twitter.png"></a></li>
+              <li><a href="#"><img src="images/whatsapp.png"></a></li>
+            </ul>
       </div>
 
    </div>
-
+   <script src='jquery.js'></script>
+  <script src='menu.js'></script>
 </body>
 </html>
