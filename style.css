@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(2, 8, 36);
+}
+.header img{
+    width: 90px;
+    height: 70px;
+    margin: 5px 0px;
+    border-radius: 20px;
+}
+.nav{
+    float: right;
+    margin-right: 10px;
+}
+.nav ul{
+    margin :10px;
+}
+.nav ul li{
+    display: inline-block;
+    padding:7px 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 3px 5px;
+    font-family: cursive;
+    font-size: 1.55rem;
+    color: white;
+}
+.nav ul li a:hover{
+    background-color: rgba(4, 36, 29, 0.473);
+}
