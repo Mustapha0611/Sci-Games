@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding:0;
+    width: 100%;
 }
 .header{
     width: 100%;
@@ -16,9 +17,11 @@ body{
 .nav{
     float: right;
     margin-right: 10px;
+    width: 47%;
 }
 .nav ul{
-    margin :10px;
+    list-style-type: none;
+    margin :2%;
 }
 .nav ul li{
     display: inline-block;
@@ -26,14 +29,14 @@ body{
 }
 .nav ul li a{
     text-decoration: none;
-    padding: 3px 5px;
+    padding: 1% 1%;
     font-family: cursive;
     font-size: 1.55rem;
     color: white;
 }
 .nav ul li a:hover{
-    background-color: rgba(11, 23, 133, 0.637);
+    border-bottom:3px solid rgb(195, 202, 209);
     border-radius: 10px;
-    transition-duration: .43;
-    font-size: 2rem;
+    transition-duration: 0.1s;
+    font-size: 1.8rem;
 }
