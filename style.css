@@ -108,14 +108,14 @@ body{
     -moz-animation-timing-function: ease-in;
 }
 
-#Action{
+#category{
       
-    margin: 0 0.5%;
+    margin: 20px 0.5%;
     box-shadow: 5px 5px 5px 5px rgb(129, 136, 143);
     display: inline-block;
 
 }
-#Action ul {
+#category ul {
     list-style-type: none;
     margin: 0px ;
     
@@ -128,7 +128,7 @@ body{
     font-size: 3em;
 }
 
-#Action ul li{
+#category ul li{
     box-shadow: 7px 7px 7px 7px rgb(129, 136, 143);
     display: inline-block;
     border-radius: 10px;
@@ -138,13 +138,13 @@ body{
     background: whitesmoke;
     padding:5px auto;
 }
-#Action ul li img{
+#category ul li img{
     width: 65%;
     height: 250px;
     margin:10% 17%;
 }
 
-#Action ul li span{
+#category ul li span{
     display: block;  
     font-family: 'guardians'; 
     font-size: small;
@@ -164,7 +164,7 @@ body{
     
 }
 
-#cart{   
+#addtocart{   
     color:white ;
     outline: none;
     border-radius: 20px;
@@ -178,19 +178,52 @@ body{
     box-shadow: 5px 5px 5px rgb(129, 136, 143);
 }
 
-#cart:hover, #Buy:hover{
+#addtocart:hover, #Buy:hover{
 transform: scale(1.15);
 transition: .1s;
 }
 
-/*footer{
-    height: 5vh;
-    background-color: transparent;
-    width: 100%;
+#About{
     text-align: center;
-    position: fixed;
-    bottom: 0;
-}*/
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px 10%;
+    height: auto;
+    box-shadow: 5px 5px 5px 5px rgb(129, 136, 143);
+    
+}
+#About h2{  
+font-family: 'forte';
+font-size: 50px;
+
+}
+#About p{
+    font-family: sans-serif;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-stretch: expanded;
+}
+
+#contact{
+
+    text-align: center;
+    width: 60%;
+    padding: 10px 20px;
+    margin: 10px 20%;
+    height: auto;
+    box-shadow: 5px 5px 5px 5px rgb(129, 136, 143);
+}
+#contact p{  
+    font-family: 'forte';
+    font-size: 50px;
+    
+    }
+#contact img {
+      width: 33%;
+      height: 250px;
+
+      border-radius: 50%;
+    }
 
 @keyframes typing {
     from{
