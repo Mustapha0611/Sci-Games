@@ -1,4 +1,4 @@
-@import
+
 body{
     margin: 0;
     padding:0;
@@ -206,7 +206,7 @@ body.night{
 }
 
 #ac{
-    font-family: 'guardians'; 
+    font-family: 'Georgia'; 
     text-align:center ;
     font-size: 3em;
 }
