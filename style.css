@@ -1,3 +1,4 @@
+@import
 body{
     margin: 0;
     padding:0;
@@ -263,7 +264,7 @@ body.night{
     box-shadow: 5px 5px 5px rgb(55, 55, 58);
 }
 
-#addtocart:hover, #Buy:hover{
+#addtocart:focus, #Buy:focus{
 transform: scale(1.15);
 transition: .1s;
 }
@@ -555,7 +556,7 @@ font-size: 50px;
         box-shadow: 5px 5px 5px rgb(129, 136, 143);
     }
     
-    #addtocart:hover, #Buy:hover{
+    #addtocart:focus, #Buy:focus{
     transform: scale(1.07);
     transition: .1s;
     }
@@ -755,12 +756,11 @@ font-size: 50px;
 
     #modal{
         display: none;
-        width: 400px;
+        width: 90%;
         height: auto;
         overflow: hidden;
         position: absolute;
         position: fixed;
-    
         background: rgb(156, 156, 156);
         top:50%;
         left:50%;
@@ -772,19 +772,19 @@ font-size: 50px;
 
     
 .check{
-    margin-top :20px;
-    margin-bottom: 0px;
-    margin-left: 150px;
-    margin-right: 200px;
     width: 100px;
     height: 80px;
+    margin-top :20px;
+    margin-bottom: 0px;
+    margin-left: 34%;
+
   }
 
   .close{
     text-align: center;
     font-size: 22px;
     margin :10px;
-    margin-left: 180px;
+    margin-left: 33%;
     cursor: pointer;
     border:1px solid black;
     display: inline-block;
@@ -922,7 +922,7 @@ font-size: 50px;
         box-shadow: 5px 5px 5px rgb(129, 136, 143);
     }
     
-    #addtocart:hover, #Buy:hover{
+    #addtocart:focus, #buy:focus{
     transform: scale(1.07);
     transition: .1s;
     }
@@ -957,10 +957,10 @@ font-size: 50px;
     
       #contact{
         text-align: center;
-        width: 92%;
-        margin: 10px 4%;
+        width: 95%;
+        margin: 10px 2.5%;
         height: auto;
-        box-shadow: 5px 5px 5px 5px rgb(129, 136, 143);
+        box-shadow: 5px 5px 5px 5px rgb(23, 34, 44);
     }
     .contact {  
         font-family: 'forte';
@@ -1002,8 +1002,6 @@ font-size: 50px;
     
     #contact ul li:hover{
             transform: scale(1.2) translateY(-5px);
-            background-color: rgb(19, 35, 59);
-    
             transition: .2s;
     }
     
